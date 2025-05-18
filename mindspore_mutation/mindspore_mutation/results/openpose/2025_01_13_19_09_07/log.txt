@@ -1,0 +1,122 @@
+-----------------------total_Mutate_time:0 start!-----------------------
+length 175
+mutate_type: UOC ;  op_type: DropPath ;  api_mutation_type: seed_model
+recurive depth: 296 select_node time: 0.006501197814941406
+len(N) 2
+Success during api_mutation
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:0 ended!-----------------------
+-----------------------total_Mutate_time:1 start!-----------------------
+length 176
+mutate_type: ABSOC_A ;  op_type: ResidualBlock ;  api_mutation_type: seed_model
+recurive depth: 75 select_node time: 0.0014729499816894531
+len(N) 3
+Success during api_mutation
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:1 ended!-----------------------
+-----------------------total_Mutate_time:2 start!-----------------------
+length 176
+mutate_type: PIOC ;  op_type: DropPath ;  api_mutation_type: seed_model
+recurive depth: 43 select_node time: 0.0009148120880126953
+len(N) 4
+Success during api_mutation
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:2 ended!-----------------------
+-----------------------total_Mutate_time:3 start!-----------------------
+length 177
+mutate_type: PIOC ;  op_type: ResidualBlock ;  api_mutation_type: deadcode
+recurive depth: 24 select_node time: 0.0005559921264648438
+PIOC:node residual_relu2
+PIOC:node name residual_relu2
+PIOC:instance ReLU<>
+PIOC:rule <module 'mindspore_mutation.rules_ms.rule15' from '/home/cvgroup/myz/modelmeta/mindspore_mutation/rules_ms/rule15.py'>
+PIOC:new layer TransLayerRule15ReLU<
+  (layer_relu): ReLU<>
+  >
+len(N) 5
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:3 ended!-----------------------
+-----------------------total_Mutate_time:4 start!-----------------------
+length 178
+mutate_type: ABSOC_B ;  op_type: Inception_A ;  api_mutation_type: deadcode
+recurive depth: 229 select_node time: 0.004917144775390625
+ABSOC_B:node branch1.0.relu
+ABSOC_B:node name branch1.0.relu
+ABSOC_B:instance ReLU<>
+ABSOC_B:rule <module 'mindspore_mutation.rules_ms.rule1' from '/home/cvgroup/myz/modelmeta/mindspore_mutation/rules_ms/rule1.py'>
+ABSOC_B:new layer TransLayerRule1ReLU<
+  (optimized_layer): ReLU<>
+  >
+unmatched ')' (OpenPoseNetOptOptOptOpt_139940975910528.py, line 609)
+state Failed: Error during mutation: unmatched ')' (OpenPoseNetOptOptOptOpt_139940975910528.py, line 609)
+-----------------------total_Mutate_time:4 ended!-----------------------
+-----------------------total_Mutate_time:5 start!-----------------------
+length 176
+mutate_type: PIOC ;  op_type: DropPath ;  api_mutation_type: seed_model
+recurive depth: 32 select_node time: 0.0007174015045166016
+len(N) 6
+Error during api_mutation: unmatched ')' (<unknown>, line 609)
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+loss_ms 0.9274375
+state Failed: api_mutation failed: unmatched ')' (<unknown>, line 609)
+-----------------------total_Mutate_time:5 ended!-----------------------
+-----------------------total_Mutate_time:6 start!-----------------------
+length 177
+mutate_type: UOC ;  op_type: DenseLayer ;  api_mutation_type: seed_model
+recurive depth: 53 select_node time: 0.0011072158813476562
+len(N) 7
+Error during api_mutation: unmatched ')' (<unknown>, line 609)
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+loss_ms 0.9274375
+state Failed: api_mutation failed: unmatched ')' (<unknown>, line 609)
+-----------------------total_Mutate_time:6 ended!-----------------------
+-----------------------total_Mutate_time:7 start!-----------------------
+length 179
+mutate_type: UOC ;  op_type: PWDWPW_ResidualBlock ;  api_mutation_type: deadcode
+recurive depth: 21 select_node time: 0.0004818439483642578
+len(N) 8
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:7 ended!-----------------------
+-----------------------total_Mutate_time:8 start!-----------------------
+length 180
+mutate_type: ABSOC_B ;  op_type: Inception_A ;  api_mutation_type: seed_model
+recurive depth: 93 select_node time: 0.0020177364349365234
+len(N) 9
+Success during api_mutation
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:8 ended!-----------------------
+-----------------------total_Mutate_time:9 start!-----------------------
+length 193
+mutate_type: ABSOC_B ;  op_type: PWDWPW_ResidualBlock ;  api_mutation_type: deadcode
+recurive depth: 255 select_node time: 0.0057811737060546875
+len(N) 10
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:9 ended!-----------------------
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+~~~~~~~~~~~~~~~~~~~~~~~~
+38.19636392593384
+
+[23;0t

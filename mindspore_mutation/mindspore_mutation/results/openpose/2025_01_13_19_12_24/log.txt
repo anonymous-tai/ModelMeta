@@ -1,0 +1,140 @@
+-----------------------total_Mutate_time:0 start!-----------------------
+length 175
+mutate_type: UOC ;  op_type: DropPath ;  api_mutation_type: seed_model
+recurive depth: 296 select_node time: 0.0066394805908203125
+len(N) 2
+Success during api_mutation
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+gpu_memory1, cpu_memory1:  4474.25 241011.91015625
+gpu_memory2, cpu_memory2:  4474.25 241011.91015625
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:0 ended!-----------------------
+-----------------------total_Mutate_time:1 start!-----------------------
+length 176
+mutate_type: ABSOC_A ;  op_type: ResidualBlock ;  api_mutation_type: seed_model
+recurive depth: 75 select_node time: 0.0014760494232177734
+len(N) 3
+Success during api_mutation
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+gpu_memory1, cpu_memory1:  3480.25 239577.484375
+gpu_memory2, cpu_memory2:  3480.25 239576.87890625
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:1 ended!-----------------------
+-----------------------total_Mutate_time:2 start!-----------------------
+length 176
+mutate_type: PIOC ;  op_type: DropPath ;  api_mutation_type: seed_model
+recurive depth: 43 select_node time: 0.0008993148803710938
+len(N) 4
+Success during api_mutation
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+gpu_memory1, cpu_memory1:  4704.25 239064.1328125
+gpu_memory2, cpu_memory2:  4704.25 239064.1328125
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:2 ended!-----------------------
+-----------------------total_Mutate_time:3 start!-----------------------
+length 177
+mutate_type: PIOC ;  op_type: ResidualBlock ;  api_mutation_type: deadcode
+recurive depth: 24 select_node time: 0.0005307197570800781
+PIOC:node residual_relu2
+PIOC:node name residual_relu2
+PIOC:instance ReLU<>
+PIOC:rule <module 'mindspore_mutation.rules_ms.rule15' from '/home/cvgroup/myz/modelmeta/mindspore_mutation/rules_ms/rule15.py'>
+PIOC:new layer TransLayerRule15ReLU<
+  (layer_relu): ReLU<>
+  >
+len(N) 5
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+gpu_memory1, cpu_memory1:  3480.25 238563.03515625
+gpu_memory2, cpu_memory2:  3480.25 238563.03515625
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:3 ended!-----------------------
+-----------------------total_Mutate_time:4 start!-----------------------
+length 178
+mutate_type: ABSOC_B ;  op_type: Inception_A ;  api_mutation_type: deadcode
+recurive depth: 229 select_node time: 0.004648923873901367
+ABSOC_B:node branch1.0.relu
+ABSOC_B:node name branch1.0.relu
+ABSOC_B:instance ReLU<>
+ABSOC_B:rule <module 'mindspore_mutation.rules_ms.rule1' from '/home/cvgroup/myz/modelmeta/mindspore_mutation/rules_ms/rule1.py'>
+ABSOC_B:new layer TransLayerRule1ReLU<
+  (optimized_layer): ReLU<>
+  >
+unmatched ')' (OpenPoseNetOptOptOptOpt_140169553264544.py, line 609)
+state Failed: Error during mutation: unmatched ')' (OpenPoseNetOptOptOptOpt_140169553264544.py, line 609)
+-----------------------total_Mutate_time:4 ended!-----------------------
+-----------------------total_Mutate_time:5 start!-----------------------
+length 176
+mutate_type: PIOC ;  op_type: DropPath ;  api_mutation_type: seed_model
+recurive depth: 32 select_node time: 0.0007011890411376953
+len(N) 6
+Error during api_mutation: unmatched ')' (<unknown>, line 609)
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+gpu_memory1, cpu_memory1:  3480.25 238035.69921875
+gpu_memory2, cpu_memory2:  3480.25 238035.69921875
+loss_ms 0.9274375
+state Failed: api_mutation failed: unmatched ')' (<unknown>, line 609)
+-----------------------total_Mutate_time:5 ended!-----------------------
+-----------------------total_Mutate_time:6 start!-----------------------
+length 177
+mutate_type: UOC ;  op_type: DenseLayer ;  api_mutation_type: seed_model
+recurive depth: 53 select_node time: 0.0010805130004882812
+len(N) 7
+Error during api_mutation: unmatched ')' (<unknown>, line 609)
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+gpu_memory1, cpu_memory1:  3480.25 238029.58203125
+gpu_memory2, cpu_memory2:  3480.25 238029.890625
+loss_ms 0.9274375
+state Failed: api_mutation failed: unmatched ')' (<unknown>, line 609)
+-----------------------total_Mutate_time:6 ended!-----------------------
+-----------------------total_Mutate_time:7 start!-----------------------
+length 179
+mutate_type: UOC ;  op_type: PWDWPW_ResidualBlock ;  api_mutation_type: deadcode
+recurive depth: 21 select_node time: 0.0004763603210449219
+len(N) 8
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+gpu_memory1, cpu_memory1:  3480.25 238004.33203125
+gpu_memory2, cpu_memory2:  3480.25 238004.33203125
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:7 ended!-----------------------
+-----------------------total_Mutate_time:8 start!-----------------------
+length 180
+mutate_type: ABSOC_B ;  op_type: Inception_A ;  api_mutation_type: seed_model
+recurive depth: 93 select_node time: 0.0020630359649658203
+len(N) 9
+Success during api_mutation
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+gpu_memory1, cpu_memory1:  6458.25 237635.7734375
+gpu_memory2, cpu_memory2:  6458.25 237635.7734375
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:8 ended!-----------------------
+-----------------------total_Mutate_time:9 start!-----------------------
+length 193
+mutate_type: ABSOC_B ;  op_type: PWDWPW_ResidualBlock ;  api_mutation_type: deadcode
+recurive depth: 255 select_node time: 0.005677223205566406
+len(N) 10
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+gpu_memory1, cpu_memory1:  7330.25 237606.4921875
+gpu_memory2, cpu_memory2:  7330.25 237606.4921875
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:9 ended!-----------------------
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+~~~~~~~~~~~~~~~~~~~~~~~~
+40.39154314994812
+
+[23;0t

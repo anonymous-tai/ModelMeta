@@ -1,0 +1,65 @@
+-----------------------total_Mutate_time:0 start!-----------------------
+length 175
+mutate_type: UOC ;  op_type: DropPath ;  api_mutation_type: seed_model
+recurive depth: 296 select_node time: 0.0067958831787109375
+len(N) 2
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:0 ended!-----------------------
+-----------------------total_Mutate_time:1 start!-----------------------
+length 176
+mutate_type: ABSOC_A ;  op_type: Dense ;  api_mutation_type: seed_model
+recurive depth: 324 select_node time: 0.006729841232299805
+len(N) 3
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:1 ended!-----------------------
+-----------------------total_Mutate_time:2 start!-----------------------
+length 177
+mutate_type: ABSOC_A ;  op_type: ResidualBlock ;  api_mutation_type: seed_model
+recurive depth: 87 select_node time: 0.0018458366394042969
+len(N) 4
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:2 ended!-----------------------
+-----------------------total_Mutate_time:3 start!-----------------------
+length 178
+mutate_type: ABSOC_A ;  op_type: Inception_A ;  api_mutation_type: deadcode
+recurive depth: 296 select_node time: 0.006044149398803711
+ABSOC_A:node branch1.1.relu
+ABSOC_A:node name branch1.1.relu
+ABSOC_A:instance ReLU<>
+ABSOC_A:rule <module 'mindspore_mutation.rules_ms.rule1' from '/home/cvgroup/myz/modelmeta/mindspore_mutation/rules_ms/rule1.py'>
+ABSOC_A:new layer TransLayerRule1ReLU<
+  (optimized_layer): ReLU<>
+  >
+len(N) 5
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:3 ended!-----------------------
+-----------------------total_Mutate_time:4 start!-----------------------
+length 179
+mutate_type: UOC ;  op_type: SELayer ;  api_mutation_type: seed_model
+recurive depth: 244 select_node time: 0.0051422119140625
+len(N) 6
+ChebyshevDistance: 0.0 ;  MAEDistance: 0.0
+loss_ms 0.9274375
+state Success!
+-----------------------total_Mutate_time:4 ended!-----------------------
+0
+1
+Success during api_mutation
+2
+Error during api_mutation: __init__() got an unexpected keyword argument 'name'
+3
+Success during api_mutation
+4
+Error during api_mutation: 'NoneType' object has no attribute 'set_data'
+5
+Success during api_mutation
+~~~~~~~~~~~~~~~~~~~~~~~~
+24.27213144302368
